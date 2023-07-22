@@ -9,30 +9,31 @@
       href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.css" />
   </head>
 
   <body>
     <div id="app">
       <div class="container">
-        <div id="pege1" class="header bg_index">
+        <div id="pege1" class="header bg-index">
           <nav class="menu">
             <div class="menu_box">
               <div class="logo_box">
                 <img src="./images/logo-1.png" alt="#" />
                 <img src="./images/logo-2.png" alt="#" />
               </div>
-              <ul class="menu_bar">
+              <ul class="menu-bar">
                 <li>
-                  <a class="menu_border" href="#pege1"
-                    >首頁
-                  </a>
+                  <a class="menu-border" href="#pege1" name="index"> 首頁 </a>
                 </li>
                 <li>
                   <a class="menu_border" href="#pege2" name="index">照顧現場</a>
                 </li>
                 <li>
-                  <a class="menu_border" href="#pege3" name="index">一看就懂長照2.0</a>
+                  <a class="menu_border" href="#pege3" name="index"
+                    >一看就懂長照2.0</a
+                  >
                 </li>
                 <li>
                   <a class="menu_border" href="#pege4" name="index">長照地圖</a>
@@ -40,14 +41,75 @@
               </ul>
             </div>
           </nav>
-          <img class="bg_title" src="./images/title.png" alt="" />
+          <img class="bg-title" src="./images/title.png" alt="" />
         </div>
         <div id="page-2">
-            <div>
-                <img src="./images/pic-2.png" alt="">
+          <div>
+            <img src="./images/page-2-pic-1.png" alt="" />
+            <img class="dialog" src="./images/page-2-pic-2.png" alt="" />
+          </div>
+          <div class="detail">
+            <pre class="text-current rotate">LONG TERM CARE SERVICES</pre>
+            <h2 class="text-current">
+              長照2.0，<br />
+              讓照顧的路上有專業相挺
+            </h2>
+            <p>
+              台灣走向超高齡社會，速度比想像中還要快又急，隨著人口老化加速，未來需要照顧年長父母的青壯人口，只會增加，不會減少。</br>
+              老年人壽命的延長，也表示照顧的時間會愈來愈長；甚至是在自己退休之後，仍須持續照顧長輩。</br>
+              「上有高堂，下有嗷嗷待哺」，三明治世代所面臨的困境，才是最需要協助的一群人。</br>
+              </br>
+              面對長照，經濟協助外，對「照顧者」提供專業協助更是關鍵！
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="215" height="2" viewBox="0 0 215 2" fill="none">
+              <rect width="215" height="2" rx="1" fill="#CADEDF"/>
+              <rect x="195" width="20" height="2" rx="1" fill="#EC6C00"/>
+              <rect x="182" width="7" height="2" rx="1" fill="#EC6C00"/>
+            </svg>
+          </div>
+        </div>
+        <div id="page-3">
+          <h1 class="title">
+            照顧現場</br> 
+            <span class="text-current">預見安心變老</span>
+          </h1>
+          <div id="box" class="carouse-box">
+            <ul id="carouse" class="carouse">
+              <li><img width="955" height="640" src="./images/page-3-pic-1.png" alt="" draggable="false"></li> 
+              <li><img width="955" height="640" src="./images/page-3-pic-2.png" alt="" draggable="false"></li> 
+              <li><img width="955" height="640" src="./images/page-3-pic-3.png" alt="" draggable="false"></li> 
+            </ul>
+            <svg id="rightBtn" class="right-btn" xmlns="http://www.w3.org/2000/svg" width="67" height="64" viewBox="0 0 67 64" fill="none">
+              <path d="M2.5 40.5L60.5 40.5L37.7958 22.5" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+              <path d="M2.5 40.5L10.5 40.5" stroke="#EC6C00" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+            </svg>
+            <div class="carouse-title">
+              <h2>
+                面對照顧壓力大？張曼娟：</br>
+                記得提醒自己，這一切都會過去的
+              </h2>
+              <p>各位照顧者又要展開新的一年，每天闖關又常感到孤單的日子。</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="215" height="21" viewBox="0 0 215 21" fill="none">
+                <path d="M215 1L143.202 1L71.4036 1L83 18L40.8638 1.7202L0 1.7202" stroke="#CADEDF" stroke-width="2"/>
+              </svg>
+              <ul id="cirList" class="cir-list">
+                <li class="change"></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
+          </div>
+        </div>
+        <div id="page-4">
+          <h1 class="title">
+            5分鐘一看就懂</br> 
+            <span class="text-current">長照2.0</span>
+          </h1>
+
         </div>
       </div>
     </div>
   </body>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/index.js"></script>
 </html>

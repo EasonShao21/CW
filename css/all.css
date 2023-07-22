@@ -9,11 +9,60 @@ body {
   font-family: Noto Sans TC;
   font-weight: 500;
   letter-spacing: 1.6px;
+  color: #333;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: 6.4px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+.text-current {
+  color: #008088;
+}
+
+.bg-current {
+  background-color: #008088;
 }
 
 .container {
   max-width: 1440px;
   margin: 0px auto;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  letter-spacing: 8px;
+}
+
+.rotate {
+  position: absolute;
+  padding-bottom: 9px;
+  transform: rotate(90deg);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #ec6c00 4%,
+    transparent,
+    transparent 5.5%,
+    #ec6c00 5.5%,
+    #ec6c00 6.5%,
+    transparent 6.5%
+  );
+  border-image-slice: 1;
 }
 
 /* page-1 header */
@@ -23,13 +72,13 @@ body {
   background-position: center center;
 }
 
-.bg_index {
+.bg-index {
   position: relative;
   background-image: url("../images/main.png");
   background-size: cover;
 }
 
-.bg_title {
+.bg-title {
   position: absolute;
   top: 27%;
   right: 5%;
@@ -44,18 +93,21 @@ body {
 }
 
 .menu {
+  max-width: 1440px;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 1rem 2.5rem;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  margin: 0 auto;
 }
 
 .menu_box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 2.5rem;
 }
 
 .logo_box {
@@ -64,46 +116,246 @@ body {
   gap: 1.5rem;
 }
 
-.menu_bar {
+.menu-bar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 24px;
 }
 
-.menu_border {
-    border: 0.25rem solid;
-    border-image-slice: 1;
-    border-width: 5px;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
+.menu-border {
+  border: 0.25rem solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }
 
-.menu_bar li a {
+.menu-bar li a {
   display: block;
   margin: 0 1.5rem;
   padding-bottom: 0.38rem;
   line-height: 100%;
   text-decoration: none;
   color: #333;
-  border-bottom: 0.25rem solid transparent
+  border-bottom: 0.25rem solid transparent;
 }
 
-.menu_bar li a:hover {
+.menu-bar li a:hover,
+.menu-bar li a:focus {
   color: #ec6c00;
-  border-image-source: linear-gradient(to right, #CADEDF 60%, #EC6C00 60%, #EC6C00 67%, #CADEDF 67%, #CADEDF 74%, #EC6C00 74%);
+  border-image-source: linear-gradient(
+    to right,
+    #cadedf 60%,
+    #ec6c00 60%,
+    #ec6c00 67%,
+    #cadedf 67%,
+    #cadedf 74%,
+    #ec6c00 74%
+  );
 }
 
 /* page-2 */
 
 #page-2 {
-    max-width: 920px;
-    margin: 0 auto;
-    padding: 120px 0 30px;
+  max-width: 920px;
+  height: 624px;
+  margin: 0 auto;
+  padding: 120px 0 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #page-2 img {
-    width: 360px;
-    height: 420px;
+  width: 360px;
+  height: 420px;
+}
+
+#page-2 img:nth-child(2) {
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  top: 19px;
+  left: -58px;
+  z-index: -1;
+}
+
+#page-2 > div {
+  position: relative;
+}
+
+.detail {
+  width: 430px;
+  margin-top: 40px;
+}
+
+.detail pre {
+  position: absolute;
+  top: 120px;
+  left: -180px;
+  padding-bottom: 9px;
+  transform: rotate(90deg);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #ec6c00 4%,
+    transparent,
+    transparent 5.5%,
+    #ec6c00 5.5%,
+    #ec6c00 6.5%,
+    transparent 6.5%
+  );
+  border-image-slice: 1;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 14px */
+  letter-spacing: 4.2px;
+}
+
+.detail p {
+  padding: 1rem 0 5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 190%; /* 30.4px */
+  letter-spacing: 1.6px;
+}
+
+.detail svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* page-3 */
+
+#page-3,
+#page-4 {
+  max-width: 1400px;
+  height: 898px;
+  margin-top: 120px;
+}
+
+#page-3 h1,
+#page-4 h1 {
+  margin-left: 267px;
+  position: relative;
+}
+
+#page-3 h1::before, #page-4 h1::before {
+  position: absolute;
+  bottom: 30px;
+  left: -83px;
+  padding-bottom: 9px;
+  transform: rotate(90deg);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #ec6c00 10%,
+    transparent,
+    transparent 15%,
+    #ec6c00 15%,
+    #ec6c00 20%,
+    transparent 20%
+  );
+  border-image-slice: 1;
+  color: #008088;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 14px */
+  letter-spacing: 4.2px;
+}
+
+#page-3 h1::before {
+  content: "LTCS LIVE";
+}
+
+#page-3 h2 {
+  color: #fff;
+  letter-spacing: initial;
+}
+
+#page-3 p {
+  color: #fff;
+  text-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 1.6px;
+  margin-top: 8px;
+}
+
+.carouse-box {
+  position: relative;
+  overflow: hidden;
+  max-width: 1400px;
+  height: 640px;
+  border-top-left-radius: 3rem;
+  margin-top: 34px;
+}
+
+.carouse-box > svg {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  cursor: pointer;
+}
+
+.carouse-box .carouse-title {
+  position: absolute;
+  bottom: 18%;
+  left: 9%;
+}
+
+.carouse-box .carouse-title svg {
+  margin-top: 23px;
+}
+
+.carouse-box .cir-list {
+  margin-top: 40px;
+  display: flex;
+  gap: 12px;
+}
+
+.carouse-box .cir-list li {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #cadedf;
+  border-radius: 50%;
+}
+
+.carouse-box .cir-list li.change {
+  width: 8px;
+  height: 8px;
+  background-color: #ec6c00;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.carouse {
+  width: 1400px;
+  position: absolute;
+  left: 0;
+  display: flex;
+}
+.carouse li {
+  width: 955px;
+  height: 640px;
+}
+
+/* page-4 */
+
+#page-4 {
+  height: 800px;
+}
+
+#page-4 h1::before {
+  bottom: -3px;
+  left: -116px;
+}
+
+#page-4 h1::before {
+  content: "LTCS Knowledge";
 }
