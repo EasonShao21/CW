@@ -16,27 +16,25 @@
   <body>
     <div id="app">
       <div class="container">
-        <div id="pege1" class="header bg-index">
+        <div id="page1" class="header bg-index">
           <nav class="menu">
-            <div class="menu_box">
-              <div class="logo_box">
+            <div class="menu-box">
+              <div class="logo-box">
                 <img src="./images/logo-1.png" alt="#" />
                 <img src="./images/logo-2.png" alt="#" />
               </div>
               <ul class="menu-bar">
                 <li>
-                  <a class="menu-border" href="#pege1" name="index"> 首頁 </a>
+                  <a class="menu-border" href="#page1" name="index"> 首頁 </a>
                 </li>
                 <li>
-                  <a class="menu_border" href="#pege2" name="index">照顧現場</a>
+                  <a class="menu-border" href="#page2" name="index">照顧現場</a>
                 </li>
                 <li>
-                  <a class="menu_border" href="#pege3" name="index"
-                    >一看就懂長照2.0</a
-                  >
+                  <a class="menu-border" href="#page3" name="index">一看就懂長照2.0</a>
                 </li>
                 <li>
-                  <a class="menu_border" href="#pege4" name="index">長照地圖</a>
+                  <a class="menu-border" href="#pege4" name="index">長照地圖</a>
                 </li>
               </ul>
             </div>
@@ -78,12 +76,13 @@
               <li><img width="955" height="640" src="./images/page-3-pic-1.png" alt="" draggable="false"></li> 
               <li><img width="955" height="640" src="./images/page-3-pic-2.png" alt="" draggable="false"></li> 
               <li><img width="955" height="640" src="./images/page-3-pic-3.png" alt="" draggable="false"></li> 
+              <li><img width="955" height="640" src="./images/page-3-pic-1.png" alt="" draggable="false"></li> 
             </ul>
             <svg id="rightBtn" class="right-btn" xmlns="http://www.w3.org/2000/svg" width="67" height="64" viewBox="0 0 67 64" fill="none">
               <path d="M2.5 40.5L60.5 40.5L37.7958 22.5" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
               <path d="M2.5 40.5L10.5 40.5" stroke="#EC6C00" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
             </svg>
-            <div class="carouse-title">
+            <div id="carouseTitle" class="carouse-title">
               <h2>
                 面對照顧壓力大？張曼娟：</br>
                 記得提醒自己，這一切都會過去的
@@ -105,7 +104,113 @@
             5分鐘一看就懂</br> 
             <span class="text-current">長照2.0</span>
           </h1>
-
+          <div class="content">
+            <div class="content-1">
+              <figure class="">
+                <div class="circle">
+                  <div class="cir-1"></div>
+                  <div class="cir-2"></div>
+                  <img src="./images/page-4-pic-1.png" alt="">
+                </div>
+                  <p class="figure-name text-current">
+                    服務對象
+                  </p>
+                  <span>
+                    經各縣市長期照顧管理中心評估，<br/>符合長照需要等級2級以上者，並符<br/>合下列之一，65歲以上老人、55歲<br/>以上原住民、50歲以上失智症者、<br/>失能身心障礙者。
+                  </span>
+              </figure>
+              <figure class="">
+                <div class="circle">
+                  <div class="cir-1"></div>
+                  <div class="cir-2"></div>
+                  <img src="./images/page-4-pic-2.png" alt="">
+                </div>
+                  <p class="figure-name text-current">
+                    申請流程
+                  </p>
+                  <span>
+                    <ul>
+                      <li>直接撥打長照專線1966</li>
+                      <li>聯絡當地長期照顧管理中心</li>
+                      <li>住院期間聯絡出院準備銜接</br>長照服務小組或是線上申請</li>
+                    </ul>
+                  </span>
+              </figure>
+              <figure class="">
+                <div class="circle">
+                  <div class="cir-1"></div>
+                  <div class="cir-2"></div>
+                  <img src="./images/page-4-pic-3.png" alt="">
+                </div>
+                  <p class="figure-name text-current">
+                    服務內容
+                  </p>
+                  <span>
+                    依據個案管理員擬訂照顧計畫，提<br/>供照顧及專業服務、交通接送、輔<br/>具及居家無障礙環境改善與喘息服<br/>務，四大類給付。                </span>
+              </figure>
+            </div>
+            <div class="btn-content">
+              <div id="page4linkInput" class="link-input">
+                了解更多長照2.0
+                <div id="page4btnStart" class="link-btn start">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
+                    <path d="M1.75 20.25L30.75 20.25L19.3979 11.25" stroke="#008088" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M1.75 20.25L5.75 20.25" stroke="#EC6C00" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div id="page4btnEnd" class="link-btn end">
+                  <svg id="out" xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
+                    <path d="M1.75 20.25L30.75 20.25L19.3979 11.25" stroke="#008088" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M1.75 20.25L5.75 20.25" stroke="#EC6C00" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+  
+                </div>
+                <div id="page4btnHover" class="link-btn hover end">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
+                    <path d="M1.75 20.25L30.75 20.25L19.3979 11.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M1.75 20.25L5.75 20.25" stroke="#CADEDF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                </div>
+              </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="434" height="35" viewBox="0 0 434 35" fill="none">
+              <path d="M432 2H151L173 30L104 2H2" stroke="#CADEDF" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div id="page-5">
+          <h1 class="title">
+            長照地圖</br> 
+            <span class="text-current">厝邊好朋友</span>
+          </h1>
+          <div class="google-map">
+            <div id="page5Content" class="content">
+              <img src="./images/page-5-map--icon.png" alt="">
+              <div id="page5linkInput" class="link-input">
+                尋找附近的長照服務
+                <div id="page5btnStart" class="link-btn start">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
+                    <path d="M1.75 20.25L30.75 20.25L19.3979 11.25" stroke="#008088" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M1.75 20.25L5.75 20.25" stroke="#EC6C00" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div id="page5btnEnd" class="link-btn end">
+                  <svg id="out" xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
+                    <path d="M1.75 20.25L30.75 20.25L19.3979 11.25" stroke="#008088" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M1.75 20.25L5.75 20.25" stroke="#EC6C00" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+  
+                </div>
+                <div id="page5btnHover" class="link-btn hover end">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
+                    <path d="M1.75 20.25L30.75 20.25L19.3979 11.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M1.75 20.25L5.75 20.25" stroke="#CADEDF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                </div>
+              </div>
+              <iframe loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBsvBSxzIUo0QWZHCUnDq05RpgvrHgWNMg&q=%27%27&center=25.063893483918, 121.53608699244018&zoom=15"></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
