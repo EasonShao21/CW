@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+
+:target{
+  scroll-margin-top: 70px;
+}
+
 body {
   font-size: 16px;
   font-family: Noto Sans TC;
@@ -293,6 +298,7 @@ h4 {
   height: 640px;
   border-top-left-radius: 3rem;
   margin-top: 34px;
+  margin-left: 40px;
 }
 
 .carouse-box > svg {
